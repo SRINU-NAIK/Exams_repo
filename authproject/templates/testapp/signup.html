@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block body_block%}
+<div class="jumbotron">
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTrWLipJ_EgI4GQMI8esmUU1zukMevBrYwFA&usqp=CAU" alt="">
+    <h1>Please Signup To Write Exams......</h1>
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" name="" value="SignUp">
+    </form>
+  </div>
+</div>
+{% endblock %}
